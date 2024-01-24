@@ -32,6 +32,7 @@ public class Eje1 {
 		System.out.println("La media de los numeros pares introducidos es: " + suma / par);
 		System.out.println("La cantidad de ceros introducidos es: " + ceros);
 		System.out.println("La cantidad de numeros impares introducidos es: " + impar);
+		System.out.println("La cantidad de numeros impares introducidos es: " + impar);
 		read.close();
 	}
 
