@@ -17,7 +17,7 @@ public class Eje1 {
 			if (n1 == 0) {
 				ceros++;
 			}
-			if (n1 % 2 == 0) {
+			if ((n1 % 2 == 0) && (n1 != 0)) {
 				par++;
 				suma += n1;
 			}
