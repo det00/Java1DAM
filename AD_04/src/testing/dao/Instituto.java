@@ -59,7 +59,7 @@ public class Instituto {
 		}
 	
 	public static void tipo() {
-		for(AbstractPersona p:institutoDao.BuscarPersonasPorTipo("Profeso")) 
+		for(AbstractPersona p:institutoDao.BuscarPersonasPorTipo("Profesor")) 
 			System.out.println(p);
 	}
 	public static void buscar() {
