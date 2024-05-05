@@ -53,7 +53,7 @@ public class InstitutoDaoImplList implements IntInstitutoDao {
 	@Override
 	public AbstractPersona buscarPersona(String nif) {
 		for (AbstractPersona p : personas) {
-			if (p.getNif().equals(nif))
+			if (p.getNif().equalsIgnoreCase(nif))
 				return p;
 		}
 		return null;
@@ -66,10 +66,12 @@ public class InstitutoDaoImplList implements IntInstitutoDao {
 
 	@Override
 	public boolean eliminarPersona(AbstractPersona persona) {
-		for (AbstractPersona p : personas) {
-			if (p.getNif().equals(persona.getNif())) {
-				personas.remove(persona);
-				return true;
+		if (persona != null) {
+			for (AbstractPersona p : personas) {
+				if (p.getNif().equals(persona.getNif())) {
+					personas.remove(persona);
+					return true;
+				}
 			}
 		}
 		return false;
@@ -78,26 +80,26 @@ public class InstitutoDaoImplList implements IntInstitutoDao {
 
 	@Override
 	public List<AbstractPersona> BuscarPersonasPorTipo(String tipoPersona) {
-		List<AbstractPersona> listatipos = new ArrayList<>();
+		List<AbstractPersona> listaTipos = new ArrayList<>();
 		for (AbstractPersona p : personas) {
-			switch (tipoPersona) {
-			case "Profesor":
+			switch (tipoPersona.toLowerCase()) {
+			case "profesor":
 				if (p instanceof Profesor)
-					listatipos.add(p);
+					listaTipos.add(p);
 				break;
-			case "Alumno":
+			case "alumno":
 				if (p instanceof Alumno)
-					listatipos.add(p);
+					listaTipos.add(p);
 				break;
-			case "Administrativo":
+			case "administrativo":
 				if (p instanceof Administrativo)
-					listatipos.add(p);
+					listaTipos.add(p);
 				break;
 
 			default:
 				break;
 			}
 		}
-		return listatipos;
+		return listaTipos;
 	}
 }

@@ -1,3 +1,6 @@
+/*
+ * OBJETO SIMPLE CON SUS GETTERS, SETTERS, EQUAL Y HASHCODE...
+ */
 package modelo.javabeans;
 
 public class Profesor extends AbstractPersona{
@@ -21,6 +24,7 @@ public class Profesor extends AbstractPersona{
 	}
 
 	@Override
+	//SE SOBREESCRIBE EL METODO PARA AGREGAR ATRIBUTOS DE CLASE PROPIOS
 	public String toString() {
 		return "Profesor [competencias=" + competencias + ", nif=" + nif + ", nombre=" + nombre + ", direccion="
 				+ direccion + ", telefono=" + telefono + "]";
@@ -28,11 +32,13 @@ public class Profesor extends AbstractPersona{
 
 	@Override
 	public String trabajar() {
+		//METODO HEREDADO QUE SE IMPLEMENTA AQUI
 		// TODO Auto-generated method stub
 		return "El profesor " + this.getNombre() + " va a impartir su clase.";
 	}
 	
 	public String ponerNotas() {
+		//METODO PROPIO DE CLASE
 		return "El profesor " + this.getNombre() + " va a corregir los examenes.";
 	}
 	

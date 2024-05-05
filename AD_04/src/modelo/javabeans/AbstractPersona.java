@@ -1,3 +1,6 @@
+/*
+ * OBJETO ABSTRACTO CON SUS GETTERS, SETTERS, EQUAL Y HASHCODE...
+ */
 package modelo.javabeans;
 
 import java.util.Objects;
@@ -69,14 +72,22 @@ public abstract class AbstractPersona {
 		return Objects.equals(nif, other.nif);
 	}
 
+	
+	
 	public String llamar(AbstractPersona p) {
+		//METODO PUBLICO YA IMPLEMENTADO, SE HEREDA TAL CUAL.
 		return this.nombre + " llamando a " + p.nombre + ".";
 	}
 
 	public abstract String trabajar();
-
+	
+	/* METODO ABSTRACTO SIN IMPLEMENTAR, SE HACE LUEGO EN CADA UNO DE LOS OBJETOS
+	 * QUE LO HEREDAN.
+	 */
+	
 	@Override
 	public String toString() {
+		//toString comun, aunque luego se reescribe para cada una de las clases.
 		return "AbstractPersona [nif=" + nif + ", nombre=" + nombre + ", direccion=" + direccion + ", telefono="
 				+ telefono + "]";
 	}
