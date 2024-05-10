@@ -1,0 +1,6 @@
+INDEX VERSION 1.134+C:\Users\estev\Documents\eclipse\WSeclipse.java\.metadata\.plugins\org.eclipse.jdt.core
+2048073492.index
+4206240978.index
+445007668.index
+476271073.index
+1865797976.index

@@ -1,0 +1,10 @@
+package modelo.javabeans;
+
+public class Libro {
+	private String titulo;
+	private String autor;
+	private int isbn;
+	private int pag;
+	private boolean disp;
+}
+

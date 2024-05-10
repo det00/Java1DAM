@@ -1,0 +1,10 @@
+package modelo.javabeans;
+
+public abstract class Persona {
+	protected String nif;
+	protected String nombre;
+	protected String direccion;
+	protected String telefono;
+}
+
+public abstract String llamar(Persona);
