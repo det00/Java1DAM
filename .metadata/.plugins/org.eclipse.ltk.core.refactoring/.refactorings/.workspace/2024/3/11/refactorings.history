@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;Profe_Practico_Segunda_Eval&apos; to &apos;ETD_EVAL_2&apos;" description="Rename resource &apos;Profe_Practico_Segunda_Eval&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Profe_Practico_Segunda_Eval" name="ETD_EVAL_2" stamp="1710511882203" updateReferences="true"/>
-</session>
